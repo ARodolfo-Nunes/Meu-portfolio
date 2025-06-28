@@ -1,0 +1,74 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* root */
+:root {
+  --color-header: #1de9b6;
+  --second-color-header: #00695c;
+  --color-body: #eee;
+  --color-footer: #263238;
+  --color-hover: #1de9b6;
+  
+  --default_box_shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+  
+  --font-white: #fff;
+  --font-black:#333;
+  --font-grey: #263238;
+  
+  --big-font: 20px;
+  --medium-font: 18px;
+  --small-font: 14px;
+}
+/* end root */
+
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p {
+  text-align: justify;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+  color: #00695c;
+}
+/* end geral */
+
+/* classes */
+.container {
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.shadow {
+  box-shadow: var(--default_box_shadow);
+}
+/* end classes */
