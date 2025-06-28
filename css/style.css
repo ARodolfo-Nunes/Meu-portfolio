@@ -31,8 +31,8 @@ body {
 .btn {
   display: none;
   position: absolute;
-  right: 2rem;
-  top: 0.6rem;
+  right: 1.5rem;
+  top: 1.8rem;
   width: 30px;
   height: 24px;
   cursor: pointer;
@@ -94,6 +94,10 @@ section div h2 {
   background: var(--color-footer);
   transition: all 0.3 ease-in-out;
   color: var(--font-white);
+}
+
+.footerContent {
+  padding: 20px 0;
 }
 
 .footer div.social {
