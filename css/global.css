@@ -8,6 +8,7 @@
   --color-body: #eee;
   --color-footer: #263238;
   --color-hover: #1de9b6;
+  --second-color-hover: #fca311;
   
   --default_box_shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
   
@@ -38,6 +39,9 @@ a {
   font-weight: 500;
 }
 
+a:hover {
+  color: var(--second-color-hover);
+}
 p {
   text-align: justify;
   font-weight: 400;

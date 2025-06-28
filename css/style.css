@@ -95,6 +95,14 @@ section div h2 {
   transition: all 0.3 ease-in-out;
   color: var(--font-white);
 }
+
+.footer div.social {
+  gap: 10px;
+}
+
+.footer div.social a {
+  color: var(--font-white);
+}
 /* end footer */
 
 /* responsivo */
