@@ -32,15 +32,31 @@ body {
   display: none;
   position: absolute;
   right: 2rem;
-  top: 1.8rem;
+  top: 0.6rem;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 102;
 }
 
 .btn .bar {
   background: var(--font-white);
   display: block;
-  width: 30px;
+  width: 100%;
   height: 2px;
   margin-bottom: 5px;
+}
+
+.btn.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.btn.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 header .nav ul {
@@ -67,6 +83,10 @@ section div {
   border-radius: 30px;
   box-shadow: var(--default_box_shadow);
 }
+
+section div h2 {
+  margin-bottom: 10px;
+}
 /* end sections */
 
 /* footer */
@@ -83,28 +103,18 @@ section div {
     font-size: var(--medium-font);
   }
   
-  .header {
-    position: relative;
-  }
   .headerContent {
-    gap: 15px;
+    gap: 10px;
+    position: relative;
   }
   
   header .nav {
     display: none;
-    
   }
   
   header .nav.show {
     display: block;
     width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 101;
-    background: linear-gradient(to right, var(--color-header),var(--second-color-header));
-    border-radius: 0 0 10px 10px;
-    padding-bottom: 1rem;
   }
   
   header .nav ul {
