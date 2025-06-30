@@ -20,3 +20,10 @@ document.addEventListener('click', function(e) {
 nav.addEventListener('click', function () {
   fecharMenu();
 })
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.scroll-top').addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({top:0})
+})

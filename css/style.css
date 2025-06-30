@@ -31,7 +31,7 @@ body {
 .btn {
   display: none;
   position: absolute;
-  right: 1.5rem;
+  right: 1rem;
   top: 1.8rem;
   width: 30px;
   height: 24px;
@@ -48,7 +48,7 @@ body {
 }
 
 .btn.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 5px);
 }
 
 .btn.active .bar:nth-child(2) {
@@ -74,7 +74,7 @@ header .nav ul {
 
 /* sections */
 section {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 section div {
@@ -87,6 +87,24 @@ section div {
 section div h2 {
   margin-bottom: 10px;
 }
+
+section .social {
+  gap: 10px;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  margin: 10px 0;
+}
+
+section .social a {
+  color: var(--font-grey);
+}
+
+section .social a svg {
+  stroke: currentColor;
+  width: 28px;
+  height: 28px;
+}
 /* end sections */
 
 /* footer */
@@ -98,10 +116,22 @@ section div h2 {
 
 .footerContent {
   padding: 20px 0;
+  flex-direction: column;
+  flex: 1;
 }
 
-.footer div.social {
+.copy {
+  margin: 10px 0;
+}
+
+footer .social {
   gap: 10px;
+}
+
+footer .social a svg {
+  stroke: currentColor;
+  width: 28px;
+  height: 28px;
 }
 
 .footer div.social a {
