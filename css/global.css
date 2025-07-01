@@ -3,11 +3,11 @@
 
 /* root */
 :root {
-  --color-header: #1de9b6;
-  --second-color-header: #00695c;
+  --color-header: #3066be;
+  --second-color-header: #090c9b;
   --color-body: #eee;
-  --color-footer: #263238;
-  --color-hover: #1de9b6;
+  --color-footer: #101010;
+  --color-hover: #3066be;
   --second-color-hover: #fca311;
   
   --default_box_shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
@@ -49,7 +49,7 @@ p {
 
 h2 {
   font-weight: 700;
-  color: #00695c;
+  color: #3066be;
 }
 /* end geral */
 

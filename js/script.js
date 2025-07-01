@@ -1,28 +1,32 @@
-const btn = document.querySelector('.btn');
-const nav = document.querySelector('.nav');
+const sideMenuBtn = document.querySelector('.btn');
+const sideMenu = document.querySelector('.sideMenu');
 
-function fecharMenu () {
-  btn.classList.remove('active');
-  nav.classList.remove('show');
+function toggleSideMenu () {
+  sideMenu.classList.toggle('open');
 }
 
-btn.addEventListener('click',function () {
-  btn.classList.toggle('active');
-  nav.classList.toggle('show');
-});
+function closeSideMenu () {
+  sideMenu.classList.remove('open');
+}
 
-document.addEventListener('click', function(e) {
-  if (!btn.contains(e.target) && !nav.contains(e.target)) {
-    fecharMenu();
+sideMenuBtn.addEventListener('click', toggleSideMenu);
+
+document.addEventListener('click', function (e) {
+  if (!sideMenuBtn.contains(e.target) && !sideMenu.contains(e.target)) {
+    closeSideMenu();
   }
 })
 
-nav.addEventListener('click', function () {
-  fecharMenu();
+sideMenu.addEventListener('click', function (e) {
+  if (e.target.tagName === 'A') {
+    closeSideMenu();
+  }
 })
 
+//Atualiza o ano no footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+//Rola até o topo da tela ao clicar em um elememto com a classe 'scroll-top'
 document.querySelectorAll('.scroll-top').addEventListener('click', function (e) {
   e.preventDefault();
   window.scrollTo({top:0})
