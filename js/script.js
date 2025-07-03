@@ -27,7 +27,23 @@ sideMenu.addEventListener('click', function (e) {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 //Rola até o topo da tela ao clicar em um elememto com a classe 'scroll-top'
-document.querySelectorAll('.scroll-top').addEventListener('click', function (e) {
+document.querySelectorAll('.scroll-top').forEach((el) => {el.addEventListener('click', (e) => {
   e.preventDefault();
-  window.scrollTo({top:0})
-})
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+});
+
+//Efeito em elementos com a classe 'hidden'
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

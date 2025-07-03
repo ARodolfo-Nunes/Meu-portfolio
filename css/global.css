@@ -76,4 +76,18 @@ h2 {
 .shadow {
   box-shadow: var(--default_box_shadow);
 }
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateZ(-100%);
+  transition: all .3s ease-in;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateZ(0);
+}
+
 /* end classes */

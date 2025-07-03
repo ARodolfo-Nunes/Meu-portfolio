@@ -121,6 +121,12 @@ footer .social a svg {
 /* end footer */
 
 /* responsivo */
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: 0;
+  }
+}
+
 @media (max-width: 820px) {
   body {
     font-size: var(--medium-font);
