@@ -1,21 +1,21 @@
 /* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* root */
 :root {
-  --color-header: #3066be;
-  --second-color-header: #090c9b;
-  --color-body: #eee;
+  --color-header: #0033cc;
+  --second-color-header: #0055ff;
+  --color-body: linear-gradient(to bottom right, #f0f6ff, #dceeff);
   --color-footer: #101010;
   --color-hover: #3066be;
   --second-color-hover: #fca311;
-  
-  --default_box_shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
-  
-  --font-white: #fff;
-  --font-black:#333;
+
+  --default_box_shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+  --font-white: #f8f8f8;
+  --font-black: #111;
   --font-grey: #263238;
-  
+
   --big-font: 20px;
   --medium-font: 18px;
   --small-font: 14px;
@@ -44,12 +44,13 @@ a:hover {
 }
 p {
   text-align: justify;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h2 {
   font-weight: 700;
-  color: #3066be;
+  color: #0055ff;
+  font-family: "Inter", Sans-Serif;
 }
 /* end geral */
 
@@ -81,7 +82,7 @@ h2 {
   opacity: 0;
   filter: blur(5px);
   transform: translateZ(-100%);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .show {
